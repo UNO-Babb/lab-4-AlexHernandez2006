@@ -46,6 +46,84 @@ def fillCorner(bob, corner):
         drawSquare(bob, 50)
         bob.end_fill()
 
+def squaresInSquares(bob, num):
+    drawSquare(bob, 50)
+    
+    if num == 2:
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 100)
+    elif num == 3:
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 100)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 150)
+    elif num == 4:
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 100)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 150)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 200)
+    else:
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 100)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 150)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 200)
+        bob.up()
+        bob.back(25)
+        bob.left(90)
+        bob.forward(25)
+        bob.right(90)
+        bob.down()
+        drawSquare(bob, 250)
+
 def main():
     myTurtle = turtle.Turtle()
     #drawPolygon(myTurtle, 5) #draws a pentagon
@@ -54,8 +132,8 @@ def main():
     #fillCorner(myTurtle, 2) #draws a square with top right corner filled in.
     #fillCorner(myTurtle, 3) #draws a square bottom left corner filled in.
 
-    # squaresInSquares(myTurtle, 5) #draws 5 concentric squares
-    # squaresInSquares(myTurtle, 3) #draws 3 concentric squares
+    #squaresInSquares(myTurtle, 5) #draws 5 concentric squares
+    #squaresInSquares(myTurtle, 3) #draws 3 concentric squares
 
 
 main()
